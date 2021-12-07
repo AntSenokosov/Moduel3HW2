@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Globalization;
 
 namespace Module3HW2
 {
@@ -6,7 +7,7 @@ namespace Module3HW2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.ReadKey();
         }
     }
 }
