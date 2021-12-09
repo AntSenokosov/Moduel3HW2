@@ -8,7 +8,16 @@ namespace Module3HW2.Models
 {
     public class Contact
     {
-        public string FullName { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string FullName
+        {
+            get
+            {
+                return FirstName + LastName;
+            }
+        }
+
         public string Phone { get; set; }
     }
 }

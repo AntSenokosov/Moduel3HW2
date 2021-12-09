@@ -1,0 +1,11 @@
+
+{
+  "ru-ru": [
+    "a",
+    "b",
+    "**/jspm_packages",
+    "**/node_modules",
+    "**/obj",
+    "**/platforms"
+  ]
+}
