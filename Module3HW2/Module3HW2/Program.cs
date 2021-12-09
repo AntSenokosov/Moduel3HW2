@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Globalization;
 using Module3HW2.Models;
+using Module3HW2.Configs;
+
 namespace Module3HW2
 {
     class Program
@@ -9,6 +11,20 @@ namespace Module3HW2
         static void Main(string[] args)
         {
             var culture = CultureInfo.CurrentCulture.Name;
+
+            var config = new ConfigCulture();
+
+            CultureInfo newCulture;
+
+            foreach (var cult in config.InitCultures())
+            {
+                if (culture == cult.Key)
+                {
+                    newCulture = new CultureInfo(culture);
+                }
+            }
+
+            newCulture = new CultureInfo("ru-US");
 
             var dict = new DictionaryContacts<string, List<Contact>>();
 
